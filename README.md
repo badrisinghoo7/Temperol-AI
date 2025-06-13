@@ -31,14 +31,13 @@ This project leverages **Temporal** to manage the user profile update process in
 
 ---
 
-## ⚙️ How It Works
+## 🧠 Temporal Workflow Logic
 
-- After logging in via Auth0, the user's basic information (such as name and email) is automatically fetched and displayed.
-- Other fields (like phone number, address, and pin code) remain empty and can be added or updated by the user.
-- When the user submits or updates these details:
-  - The frontend sends the data to the backend route.
-  - The backend triggers a Temporal workflow, which reliably updates the database in the background.
-- All updates are processed asynchronously with Temporal, ensuring consistency and reliability.
+* User clicks **Update Profile**
+* Backend route `/api/users/:id` triggers a **PUT** request
+* Temporal client starts a workflow (`updateUserWorkflow`) with task queue `user-queue`
+* Temporal worker handles the DB update using activities
+* Ensures reliable background execution with retries and monitoring
 
 ---
 
@@ -155,17 +154,6 @@ npm run dev
 ```
 
 > Frontend runs on: [http://localhost:5173](http://localhost:5173)
-
-
-## 🧠 Temporal Workflow Logic
-
-* User clicks **Update Profile**
-* Backend route `/api/users/:id` triggers a **PUT** request
-* Temporal client starts a workflow (`updateUserWorkflow`) with task queue `user-queue`
-* Temporal worker handles the DB update using activities
-* Ensures reliable background execution with retries and monitoring
-
----
 
 
 
