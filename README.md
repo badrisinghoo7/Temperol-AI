@@ -19,6 +19,29 @@ This project leverages **Temporal** to manage the user profile update process in
 
 ---
 
+---
+
+## ✅ Features
+
+* 🔐 Login using Auth0
+* 👤 View & update profile details
+* ⚙️ Backend orchestrated using Temporal workflows
+* 🧠 Async updates with Temporal queue
+* 🐳 Easy Docker-based setup
+
+---
+
+## ⚙️ How It Works
+
+- After logging in via Auth0, the user's basic information (such as name and email) is automatically fetched and displayed.
+- Other fields (like phone number, address, and pin code) remain empty and can be added or updated by the user.
+- When the user submits or updates these details:
+  - The frontend sends the data to the backend route.
+  - The backend triggers a Temporal workflow, which reliably updates the database in the background.
+- All updates are processed asynchronously with Temporal, ensuring consistency and reliability.
+
+---
+
 ## 📂 Folder Structure
 
 ```
@@ -133,17 +156,6 @@ npm run dev
 
 > Frontend runs on: [http://localhost:5173](http://localhost:5173)
 
----
-
-## ✅ Features
-
-* 🔐 Login using Auth0
-* 👤 View & update profile details
-* ⚙️ Backend orchestrated using Temporal workflows
-* 🧠 Async updates with Temporal queue
-* 🐳 Easy Docker-based setup
-
----
 
 ## 🧠 Temporal Workflow Logic
 
@@ -154,6 +166,8 @@ npm run dev
 * Ensures reliable background execution with retries and monitoring
 
 ---
+
+
 
 ## ✨ Author
 
