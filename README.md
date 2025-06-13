@@ -1,14 +1,8 @@
-# 🚀 Temporal AI
+# 🚀 Profile Editor
 
-**Temporal AI** is a full-stack application that allows users to log in, access their profile, update their details, and persist changes through a Temporal workflow — ensuring instant and consistent updates to the database using background job execution.
+**Profile Editor** is a full-stack application that allows users to log in, access their profile, update their details, and persist changes through a Temporal workflow — ensuring instant and consistent updates to the database using background job execution.
 
----
 
-## 📸 Demo
-
-> (You can add a screenshot or GIF here if available)
-
----
 
 ## 🛠 Tech Stack
 
