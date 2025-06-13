@@ -104,7 +104,10 @@ cd temporal-ai
 
 ### 2. Start Temporal Services via Docker
 
+Clone the official Temporal Docker Compose setup:
+
 ```bash
+git clone https://github.com/temporalio/docker-compose.git
 cd docker-compose
 docker-compose up -d
 ```
