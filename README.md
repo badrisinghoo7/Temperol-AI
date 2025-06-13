@@ -112,8 +112,8 @@ OPENSEARCH_VERSION=2.5.0
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/badrisinghoo7/temporal-ai.git
-cd temporal-ai
+https://github.com/badrisinghoo7/Temperol-AI.git
+cd Temperol-AI
 ```
 
 ---
