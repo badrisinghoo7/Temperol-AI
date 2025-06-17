@@ -86,7 +86,6 @@ VITE_AUTH0_CLIENT_ID=hx0sTLTqCvHgEzyCi0ycKqeVFjETyY4I
 ### 🔐 Backend (`.env`)
 ```env
 MONGO_URI=mongodb+srv://badri:singh@cluster0.frdj16f.mongodb.net/temperolAiDB?retryWrites=true&w=majority&appName=Cluster0
-CRUD_CRUD_API=https://crudcrud.com/api/e3d4956e451f42e097be001f8d5f1ffd
 ```
 
 ### 🐳 Docker (`docker-compose/.env`)

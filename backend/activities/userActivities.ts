@@ -7,7 +7,7 @@ export async function saveToDB(data: any) {
   data,
   { upsert: true, new: true }
 );
-return result;
+// return result;
 }
 
 // export async function saveToCrudCrud(data: any) {
